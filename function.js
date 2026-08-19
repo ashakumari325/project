@@ -214,3 +214,254 @@
 // }
 // prinTable(5);
 
+// 17
+
+// function countEven(n) {
+//     let count = 0;
+//     for (let i = 1; i <= n; i++) {
+//         if (i % 2 === 0)
+//             count++
+//     }
+//     return count;
+// }
+// console.log(countEven(7));
+
+// 18
+
+// function countOdd(n) {
+//     let count = 1;
+//     for (let i = 1; i <= n; i++) {
+//         if (i % 2 !== 0)
+//             count++;
+//     }
+//     return count;
+// }
+
+// console.log(countOdd(5));
+// console.log(countOdd(10));
+
+// 19
+
+// function countEven(n) {
+//     let sum = 0 ; 
+//     for (let i = 1; i <= n; i++) {
+//         if (i % 2 === 0) {
+//             sum += i;
+//         }
+//     }
+//     return sum;
+// }
+// console.log(countEven(5));
+// console.log(countEven(10));
+
+// 20
+
+// function sumOdd(num) {
+//     let sum = 0 ;
+//     for (let i = 1; i <= num; i++) {
+//         if (i % 2 !== 0) {
+//             sum += i;
+//         }
+//     }
+//     return sum;
+// }
+// console.log(sumOdd(5));
+// console.log(sumOdd(10));
+
+// 21
+
+// function factorial(n) {
+//     if (n < 0) {
+//         return "Negative numbers dont have factorial"
+//     }
+//     else if(n === 0 || n === 1) {
+//         return 1;
+//     } 
+//     else{
+//         let result = 1; 
+//         for (let i = 1; i <= n; i++) {
+//             result *= i ;
+//         }
+//         return  result;
+//     }
+
+//     }
+//     console.log(factorial(5));
+//     console.log(factorial(0));
+//     console.log(factorial(-3));
+// 22
+// function reversenumber (n){
+//     let reverse = 0;
+//     for(let i = 1; i <= n; i++){
+//         let digit = n % 10
+//         reverse = reverse * 10 + digit;
+//         n = Math.floor(n / 10)
+//     }
+//     console.log(reverse)
+// }
+// reversenumber(345)
+
+// // 23
+// function countdigit (n){
+//     let count = 0;
+//    while(n > 0){
+//             count++
+//             n = Math.floor(n / 10)
+//         }
+//           console.log(count)
+//     }
+  
+// countdigit(456788)
+
+// 24
+// function sumdigit(n){
+//     let sum = 0;
+//     while(n > 0){
+//         let digit = n % 10
+//         sum += digit
+//         n = Math.floor(n / 10)
+//     }
+//     console.log(sum)
+// }
+// sumdigit(678)
+
+// 25 
+ 
+// function checkPrime(n) {
+//     if (n <= 1) {
+//         return " not a prime number"
+//     }
+
+//     else{
+//         let isPrime = true;
+//         for (let i = 2; i < n; i++) {
+//             if (n % i === 0) {
+//                 isPrime = false; 
+//                 break;
+//             }
+//         }
+//         if (isPrime) {
+//             return "it is prime number";
+//         }
+//         else{
+//             return "it is Prime number";
+//         }
+//     }
+// }
+
+// console.log(checkPrime(7));
+// console.log(checkPrime(10));
+// console.log(checkPrime(1));
+
+// 26
+// function printPrime(n) {
+//     if (n < 2) {
+//         console.log("1 se " + n + " tak koi prime number nahi hai");
+//         return;
+//     }
+
+//     for (let i = 2; i <= n; i++) {
+//         let isPrime = true;
+
+//         for (let j = 2; j < i; j++) {
+//             if (i % j === 0) {
+//                 isPrime = false; 
+//                 break;
+//             }
+//         }
+
+//         if (isPrime) {
+//             console.log(i);
+//         }
+//     }
+// }
+
+// printPrime(10); 
+// printPrime(20); 
+
+// 27
+// function findLargest(numbers) {
+//     if (numbers.length === 0) {
+//         return "given any number";
+//     } else {
+//         let largest = numbers[0]; 
+
+//         for (let i = 1; i < numbers.length; i++) {
+//             if (numbers[i] > largest) {
+//                 largest = numbers[i]; 
+//             }
+//         }
+
+//         return largest;
+//     }
+// }
+
+// console.log(findLargest([10, 45, 2, 99, 23])); 
+// console.log(findLargest([-5, -1, -20]));       
+
+// 28
+// function findSmallest(number) {
+//     if (number.length === 0) {
+//         return "given any number";
+//     } 
+//     else{
+//         let smallest = number[0];
+
+//         for (let i = 1; i < number.length; i++) {
+//             if (number[i] > smallest) {
+//                 smallest = number[i];
+//             }
+//         }
+//         return smallest;
+//     }
+// }
+//  console.log(findSmallest([15,32,56,45]));
+//  console.log(findSmallest([-6, -4, -3]))
+
+// 29
+
+// function countMultiples(n) {
+//     if (n < 15) {
+//         return 0; 
+//     } else {
+//         let count = 0;
+//                 for (let i = 1; i <= n; i++) {
+            
+//             if (i % 3 === 0 && i % 5 === 0) {
+           
+//             }
+//         }
+//         return count;
+//     }
+// }
+
+
+// console.log(countMultiples(15)); 
+// console.log(countMultiples(30)); 
+// console.log(countMultiples(50));
+
+// 30
+ function numberGame(n) {
+    if (n < 1) {
+        console.log("give a number which is 1 or grater than 1");
+        return;
+    }
+
+    for (let i = 1; i <= n; i++) {
+        
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+        } 
+        else if (i % 3 === 0) {
+            console.log("Fizz");
+        } 
+        else if (i % 5 === 0) {
+            console.log("Buzz");
+        } 
+        else {
+            console.log(i);
+        }
+    }
+}
+
+numberGame(15);
