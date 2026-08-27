@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Hero</title>
+    <style>
+        .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-image {
+        order: 1;
+    }
+
+    .hero-text {
+        order: 2;
+        text-align: center;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="hero">
+
+    <div class="hero-text">
+        <h1>Welcome to Our Website</h1>
+        <p>This is the hero text section.</p>
+        <button>Learn More</button>
+    </div>
+
+    <div class="hero-image">
+        <img src="./assets/gaming spot.png" alt="Hero Image">
+    </div>
+
+</div>
+</body>
+</html>
