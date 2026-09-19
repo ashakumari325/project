@@ -440,28 +440,57 @@
 // console.log(countMultiples(30)); 
 // console.log(countMultiples(50));
 
-// 30
- function numberGame(n) {
-    if (n < 1) {
-        console.log("give a number which is 1 or grater than 1");
-        return;
-    }
+// // 30
+//  function numberGame(n) {
+//     if (n < 1) {
+//         console.log("give a number which is 1 or grater than 1");
+//         return;
+//     }
 
-    for (let i = 1; i <= n; i++) {
+//     for (let i = 1; i <= n; i++) {
         
-        if (i % 3 === 0 && i % 5 === 0) {
-            console.log("FizzBuzz");
-        } 
-        else if (i % 3 === 0) {
-            console.log("Fizz");
-        } 
-        else if (i % 5 === 0) {
-            console.log("Buzz");
-        } 
-        else {
+//         if (i % 3 === 0 && i % 5 === 0) {
+//             console.log("FizzBuzz");
+//         } 
+//         else if (i % 3 === 0) {
+//             console.log("Fizz");
+//         } 
+//         else if (i % 5 === 0) {
+//             console.log("Buzz");
+//         } 
+//         else {
+//             console.log(i);
+//         }
+//     }
+// }
+
+// // numberGame(15);
+
+// // test practice
+
+// function checnumber(num) {
+//     if (num >=0) {
+//         return"positive"
+//     }
+//     else{
+//         return"negative"
+//     }
+// }
+// console.log(checknumber(10));
+
+// function printEven(num) {
+//     for (let i =1; i <= num;i++) {
+//         if (n % 2 ===0) {
+//             console.log(i);
+//         }
+//     }
+    
+// }
+
+function printeven(num) {
+    for (let i = 1; i <= num; i++) {
+        if (n % 2 === 0) {
             console.log(i);
         }
     }
 }
-
-numberGame(15);
